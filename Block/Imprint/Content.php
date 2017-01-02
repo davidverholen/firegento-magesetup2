@@ -137,6 +137,6 @@ JS;
      */
     public function getImprintValue($field)
     {
-        return $this->scopeConfig->getValue(self::XML_PATH_IMPRINT . $field);
+        return $this->scopeConfig->getValue(self::XML_PATH_IMPRINT . $field, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 }
